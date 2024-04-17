@@ -39,7 +39,7 @@ public class BaseConfig
 	@BeforeClass
 	static void setup() {
 		String currentDir = System.getProperty("user.dir");
-	      String fullPath = Paths.get(currentDir, "drivers","X64", "chromedriver").toString();
+	      String fullPath = Paths.get(currentDir, "drivers","X64", "chromedriver-win32.exe").toString();
 	      screenshotDirectory = Paths.get(currentDir, "screenshots").toString();
 	      generatedFakeData = FetchCsvData(null);
 	      
